@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="application.minseong.capstone"
+    android:installLocation="auto">
+
+  <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+  <uses-permission android:name="org.androidtown.lbs.map.permission.MAPS_RECEIVE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"
+      tools:ignore="ProtectedPermissions" />
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.DIAL_PHONE"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+  <application
+      android:name=".App"
+      android:allowBackup="false"
+      android:icon="@mipmap/ic_launcher_round"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/ic_launcher"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme.NoActionBar"
+      tools:ignore="GoogleAppIndexingWarning"
+      android:largeHeap="true"
+      android:hardwareAccelerated="false">
+      <meta-data
+          android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+          android:value="barcode,face,ocr,ica" />
+
+
+      <uses-library android:name="com.google.android.maps" />
+
+      <meta-data android:name="com.facebook.sdk.ApplicationId"
+          android:value="@string/facebook_app_id"/>
+      <activity android:name="com.facebook.FacebookActivity"
+          android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+          android:label="@string/app_name" />
+      <activity android:name="com.facebook.CustomTabActivity"
+          android:exported="true"> <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="@string/fb_login_protocol_scheme" />
+      </intent-filter>
+      </activity>
+
+
+      <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_app_key" />
+
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="@string/kakao_app_key" />
+
+      <activity
+          android:name="application.minseong.capstone.java.ChooserActivity"
+          android:exported="true"
+          android:label="@string/app_name">
+<!--          <intent-filter>-->
+<!--              <action android:name="android.intent.action.MAIN" />-->
+<!--              <category android:name="android.intent.category.LAUNCHER" />-->
+<!--          </intent-filter>-->
+      </activity>
+
+
+
+
+      <activity android:name=".java.LivePreviewActivity" android:exported="true">
+      </activity>
+
+
+
+
+
+    <activity
+        android:name="application.minseong.capstone.SplashActivity"
+        android:label="@string/app_name"
+        android:exported="true">
+                  <intent-filter>
+                      <action android:name="android.intent.action.MAIN" />
+                      <category android:name="android.intent.category.LAUNCHER" />
+                  </intent-filter>
+    </activity>
+
+    <activity
+        android:name="application.minseong.capstone.MainActivity"
+        android:screenOrientation="portrait"
+        android:exported="false">
+<!--      <intent-filter>-->
+<!--        <action android:name="android.intent.action.MAIN" />-->
+<!--        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--      </intent-filter>-->
+    </activity>
+
+    <activity android:name="application.minseong.capstone.LoginActivity"
+        android:screenOrientation="portrait"
+        android:exported="false">
+<!--      <intent-filter>-->
+<!--        <action android:name="android.intent.action.MAIN" />-->
+<!--        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--      </intent-filter>-->
+
+    </activity>
+    <activity android:name="application.minseong.capstone.SignUpActivity"></activity>
+    <activity android:name="application.minseong.capstone.GetImageAcitivity"></activity>
+    <activity android:name="application.minseong.capstone.WelcomeActivity"></activity>
+    <activity android:name="application.minseong.capstone.SliderActivity"></activity>
+    <activity android:name="application.minseong.capstone.GpsActivity"></activity>
+    <activity android:name="application.minseong.capstone.AddFriend"></activity>
+      <activity android:name="application.minseong.capstone.QRcodeTest"></activity>
+
+    <activity
+        android:name="com.soundcloud.android.crop.CropImageActivity"
+        android:screenOrientation="portrait"
+        android:exported="false"
+        android:theme="@style/Theme.AppCompat.NoActionBar" />
+    <!--android:theme="@style/Theme.AppCompat.NoActionBar" />-->
+    <!--        <provider-->
+    <!--            android:name="android.support.v4.content.FileProvider"-->
+    <!--            android:authorities="{application.minseong.capstone}.provider"-->
+    <!--            android:exported="false"-->
+    <!--            android:grantUriPermissions="true">-->
+    <!--            <meta-data-->
+    <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+    <!--                android:resource="@xml/provider_paths" />-->
+    <!--        </provider>-->
+
+
+<!--      <provider-->
+<!--          android:name="androidx.core.content.FileProvider"-->
+<!--          android:authorities="${applicationId}.provider"-->
+<!--          android:exported="false"-->
+<!--          android:grantUriPermissions="true">-->
+<!--          <meta-data-->
+<!--              android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--              android:resource="@xml/provider_paths_app" />-->
+<!--      </provider>-->
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+      <!--            <meta-data-->
+      <!--                android:name="android.support.v4.contenct.FILE_PROVIDER_PATHS"-->
+      <!--                android:resource="@xml/provider_paths" />-->
+      <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/provider_paths"></meta-data>
+    </provider>
+
+
+  </application>
+
+</manifest>
+

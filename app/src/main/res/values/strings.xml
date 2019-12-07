@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mayday</string>
+
+    <string name="todo">TODO</string>
+    <string name="kakao_app_key">f295c568b66de38e3d7013fa371b96ad</string>
+    <string name="google_app_key">AIzaSyDZwrp2hNcg-e9h97AmR1oAH2Z0zuTweho</string>
+    <string name="google_place">AIzaSyDnlrm2MoEy5Mai-kuM5TYHtG6TxQSBFOc</string>
+    <string name="permission_1">Please turn on the [Setting]>[Permission]</string>
+    <string name="permission_2">If you reject Permission, you can not use this service</string>
+    <string name="callNumber">112</string>
+    <string name="facebook_app_key">uRlqUeZm6UKOe1z9Rjp61GHe/go=</string>
+    <string name="youtube_app_key">AIzaSyD983fUJL7uFszrxJ93Z7hCe-jsn2yQiZs</string>
+    <!--  <string name="facebook_app_id">391738765080592</string>-->
+    <!--  <string name="fb_login_protocol_scheme">fb391738765080592</string>-->
+
+    <string name="facebook_app_id">391738765080592</string>
+    <string name="fb_login_protocol_scheme">fb391738765080592</string>
+
+    <string-array name="sexs">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!-- splash.xml -->
+    <string name="splash_loading">loading..</string>
+
+    <!-- login.xml -->
+    <string name="login_top">MAYDAY</string>
+    <string name="login_login">로그인</string>
+    <string name="login_haveid">ID가 없으신가요</string>
+    <string name="login_makeid">여기서 ID를 생성하세요.</string>
+    <string name="login_detection">Start detection!</string>
+
+    <!-- get_image.xml -->
+    <string name="profile_page">프로필 페이지</string>
+    <string name="profile_plz_picture">사진을 추가해 주세요!</string>
+    <string name="profile_gallery">갤러리</string>
+    <string name="profile_camera">카메라</string>
+    <string name="profile_profile">PROFILE</string>
+    <string name="profile_plzemail">이메일을 입력해 주세요.</string>
+    <string name="profile_plzcallnumber">휴대폰 번호를 입력해 주세요.</string>
+    <string name="proflie_birth">생일을 선택해 주세요.</string>
+    <string name="profile_previous">이전</string>
+    <string name="profile_next">다음</string>
+
+    <!-- addfriend.xml -->
+    <string name="addfri_friinfo">친구의 정보를 입력하세요.</string>
+    <string name="addfri_name">이름</string>
+    <string name="addfri_call">전화번호</string>
+    <string name="addfri_register">등록</string>
+
+    <!-- gps.xml-->
+    <string name="gps_nearest">근처의 경찰서 찾기</string>
+    <string name="gps_callP">경찰서 전화하기</string>
+    <string name="gps_callF">소방서 전화하기</string>
+
+
+    <!-- popup.xml -->
+    <string name="popup_burn">화상</string>
+    <string name="popup_cpr">심폐소생술</string>
+    <string name="popup_extinguisher">소화기</string>
+    <string name="popup_x">X</string>
+
+
+    <!--signup.xml-->
+    <string name="signup_info">사용자 계정 정보를 입력하세요</string>
+    <string name="signup_create">계정 생성</string>
+    <string name="signup_already">이미 계정이 있으신가요? 로그인하기</string>
+
+    <!-- welcome.xml-->
+    <string name="welcome_mayday">WELCOME TO MAYDAY</string>
+    <string name="welcome_register">현재 등록된 인원</string>
+    <string name="welcome_start">시작</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="i_will_help_you">I will help you</string>
+
+
+    <string name="picture">Picture</string>
+    <string name="help_text">
+      <b>HDR Viewfinder Demo:</b>\n\n
+
+      Tap viewfinder to switch modes.\n\n
+
+      <b>Normal:</b> Standard camera preview\n
+      <b>Split:</b> Manual exposure control\n
+      <b>HDR:</b> Fused HDR viewfinder\n\n
+
+      Swipe up/down in Split/HDR modes to change manual exposure
+      values.\n\n
+
+      The left half of the viewfinder controls exposure time for
+      even-numbered frames, and the right half of the viewfinder
+      controls exposure time for odd-numbered frames
+    </string>
+
+    <string name="info">Info</string>
+
+    <string name="camera_permission_rationale">This sample app requires camera access in order to
+        demo the API.</string>
+    <string name="camera_no_good">No back-facing sufficiently capable camera available!</string>
+    <string name="camera_disabled">Camera is disabled by device policy</string>
+    <string name="camera_disconnected">Camera was disconnected before it was opened</string>
+    <string name="camera_error">Camera service reported an error</string>
+    <string name="camera_unknown">Unknown camera error: %s</string>
+    <string name="camera_permission_denied_explanation">You\'ve denied a permission that the app
+        needs for core functionality. If you selected &quot;don\'t ask again&quot; in the past then
+        you need to use Settings to re-enable the permission.</string>
+
+    <string name="ok">OK</string>
+    <string name="settings">Settings</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="toggle_turn_on">Front</string>
+    <string name="toggle_turn_off">Back</string>
+    <string name="desc_camera_source_activity">Vision detectors demo with live camera preview</string>
+    <string name="desc_still_image_activity">Vision detectors demo with a still image</string>
+
+    <!--main.xml-->
+    <string name="emergencycall">긴급통화</string>
+    <string name="gps">GPS</string>
+    <string name="youtube">유튜브</string>
+    <string name="detection">사물인식</string>
+
+    <!--slide.xml-->
+    <string name="slide_start">시작하기</string>
+
+    <!--dialogmap.xml-->
+    <string name="cancel">취소</string>
+
+</resources>

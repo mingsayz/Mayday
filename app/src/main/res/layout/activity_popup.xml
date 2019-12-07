@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280sp"
+    android:layout_height="220sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5sp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center">
+    
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:text="@string/popup_x"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlex"/>
+
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_width="260sp"
+        android:layout_height="120sp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "30sp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6sp"
+            app:cardCornerRadius="20sp"
+            android:layout_margin="12sp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/burn"
+                    app:srcCompat="@drawable/fireburn"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width = "30sp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6sp"
+            app:cardCornerRadius="20sp"
+            android:layout_margin="12sp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cpr"
+                    app:srcCompat="@drawable/cpricon"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width = "30sp"
+            android:layout_height = "wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6sp"
+            app:cardCornerRadius="20sp"
+            android:layout_margin="12sp"
+            app:cardBackgroundColor="#fffafa">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ext"
+                    app:srcCompat="@drawable/fireextinguish"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_burn"
+            android:layout_marginLeft="30sp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_cpr"
+            android:layout_marginLeft="42sp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_extinguisher"
+            android:layout_marginLeft="37sp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

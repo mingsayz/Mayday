@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        style="@style/MaterialTheme">
+
+    </com.google.android.gms.maps.MapView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gps_cancel"
+        android:layout_below="@id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="@string/cancel"
+        android:textSize="15dp" />
+</RelativeLayout>

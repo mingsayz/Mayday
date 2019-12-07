@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="control_background">#cc4285f4</color>
+
+  <color name="white">#fff</color>
+  <color name="black">#000</color>
+
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#273833</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="lightorange">#fdf2df</color>
+  <color name="lightorangedark">#ebd6ab</color>
+  <color name="graylight">#fafafa</color>
+  <color name="startblue">#09c6df</color>
+  <color name="endblue">#0bcce6</color>
+  <color name="green">#45bc62</color>
+  <color name="oragne">#eaad43</color>
+
+
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="colorTransparentWhite">#cccccc</color>
+
+  <!-- Slider colors -->
+  <color name="color1">#424549</color>
+  <color name="color2">#7e455e</color>
+  <color name="color3">#796e25</color>
+  <color name="color4">#59717c</color>
+  =
+  <color name="color5">#5C5070</color>
+  <color name="color6">#4E724F</color>
+  <color name="color7">#6B5148</color>
+  <color name="color8">#01383F</color>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+  </style>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme3" parent="Theme.MaterialComponents.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+<!--  <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">-->
+<!--  </style>-->
+  <style name="MaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="AppTheme1" parent="Theme.MaterialComponents.NoActionBar">
+  </style>
+
+  <style name="AppTheme2" parent="Theme.MaterialComponents.NoActionBar">
+    <item name="colorPrimary">@color/white</item>
+    <item name="colorPrimaryDark">@color/black</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+
+</resources>

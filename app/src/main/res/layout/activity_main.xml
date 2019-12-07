@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/login_top"
+                android:textColor="@color/black"
+                android:fontFamily="@font/firasans_bold"
+                android:layout_marginLeft="20sp"
+                android:textSize="55sp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/smilemaydayicon">
+
+            </ImageView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/qrcode" />
+
+            <ImageView
+                android:id="@+id/addFriend"
+                android:layout_width="30sp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                app:srcCompat="@drawable/ic_group_add_black_24dp"/>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <Switch
+                android:id="@+id/sw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위험감지 "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="20sp">
+
+            <ImageView
+                android:id="@+id/gas_title"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="50sp"
+                android:textColor="@color/lightorangedark"
+                app:srcCompat="@drawable/gas3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="   가스   :   "
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/gasValue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp">
+        <ImageView
+                android:id="@+id/temp_title"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginLeft="50sp"
+                app:srcCompat="@drawable/temp3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="   온도   :   "
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:textSize="30sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/hu_title"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                app:srcCompat="@drawable/water1"
+                android:layout_marginLeft="50sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="   습도   :   "
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:textSize="30sp"
+                android:id="@+id/huValue"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="블루투스 연결하기"
+            android:textSize="20sp"/>
+
+
+        <ImageView
+            android:id="@+id/alarmBtn"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            app:srcCompat="@drawable/alarm_no"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border"
+            android:weightSum="5"
+            android:layout_marginTop="10sp"
+            >
+
+            <ImageView
+                android:id="@+id/emergencycall"
+                android:layout_width="60sp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="15sp"
+                app:srcCompat="@drawable/emergencycall"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/gps_image"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/ic_my_location_black_24dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:src="@drawable/youtube1"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/detection_image"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:src="@drawable/detection"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="5"
+            android:background="#f8f9fa">
+
+            <TextView
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:text="@string/emergencycall"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15sp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="@string/gps"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="@string/youtube"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:text="@string/detection"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

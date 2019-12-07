@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/layout_gps">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        class="com.google.android.gms.maps.MapFragment" />
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Latitude : "-->
+            <!--android:textColor="@color/lightorangedark"-->
+            <!--android:textSize="30sp"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_latitude"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/lightorange"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="10sp">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Longitude : "-->
+            <!--android:textColor="@color/lightorangedark"-->
+            <!--android:textSize="30sp"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_longitude"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/lightorange"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20sp"-->
+        <!--android:id="@+id/indangerbtn"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="Are you in danger now?"-->
+        <!--android:textSize="20dp"-->
+        <!--android:background="@drawable/buttonstyle"/>-->
+
+    <Button
+        android:id="@+id/findBtn"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/gps_nearest"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:id="@+id/policeBtn"
+        android:layout_gravity="center"
+        android:text="@string/gps_callP"
+        android:textSize="15dp"
+        android:background="@drawable/buttonstyle"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:id="@+id/firestationBtn"
+        android:layout_gravity="center"
+        android:text="@string/gps_callF"
+        android:textSize="15dp"
+        android:background="@drawable/buttonstyle" />
+
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:id="@+id/place_picker"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--/>-->
+</LinearLayout>
