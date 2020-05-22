@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean isPlayingSong = false;
     private BluetoothSPP bt;
 
-//    Dialog myDialog;
+    Dialog myDialog;
 
     Switch aSwitch;
 
@@ -112,16 +112,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        bt = new BluetoothSPP(this);
+        //bt = new BluetoothSPP(this);
         final Context context = this;
 
 
-        if (!bt.isBluetoothAvailable()) { //블루투스 사용 불가
-            Toast.makeText(getApplicationContext()
-                    , "Bluetooth is not available"
-                    , Toast.LENGTH_SHORT).show();
-            finish();
-        }
+//        if (!bt.isBluetoothAvailable()) { //블루투스 사용 불가
+//            Toast.makeText(getApplicationContext()
+//                    , "Bluetooth is not available"
+//                    , Toast.LENGTH_SHORT).show();
+//            finish();
+//        }
 
 
         _gpsImg.setOnClickListener(new View.OnClickListener() {
@@ -431,21 +431,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void onDestroy() {
         super.onDestroy();
-        bt.stopService(); //블루투스 중지
+        //bt.stopService(); //블루투스 중지
     }
 
     public void onStart() {
         super.onStart();
-        if (!bt.isBluetoothEnabled()) { //
-            Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(intent, BluetoothState.REQUEST_ENABLE_BT);
-        } else {
-            if (!bt.isServiceAvailable()) {
-                bt.setupService();
-                bt.startService(BluetoothState.DEVICE_OTHER); //DEVICE_ANDROID는 안드로이드 기기 끼리
-                //setup();
-            }
-        }
+//        if (!bt.isBluetoothEnabled()) { //
+//            Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//            startActivityForResult(intent, BluetoothState.REQUEST_ENABLE_BT);
+//        } else {
+//            if (!bt.isServiceAvailable()) {
+//                bt.setupService();
+//                bt.startService(BluetoothState.DEVICE_OTHER); //DEVICE_ANDROID는 안드로이드 기기 끼리
+//                //setup();
+//            }
+//        }
     }
 
 //    public void setup() {
@@ -459,21 +459,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == BluetoothState.REQUEST_CONNECT_DEVICE) {
-            if (resultCode == AppCompatActivity.RESULT_OK)
-                bt.connect(data);
-        } else if (requestCode == BluetoothState.REQUEST_ENABLE_BT) {
-            if (resultCode == AppCompatActivity.RESULT_OK) {
-                bt.setupService();
-                bt.startService(BluetoothState.DEVICE_OTHER);
-                //setup();
-            } else {
-                Toast.makeText(MainActivity.this
-                        , "Bluetooth was not enabled."
-                        , Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }
+//        if (requestCode == BluetoothState.REQUEST_CONNECT_DEVICE) {
+//            if (resultCode == AppCompatActivity.RESULT_OK)
+//                bt.connect(data);
+//        } else if (requestCode == BluetoothState.REQUEST_ENABLE_BT) {
+//            if (resultCode == AppCompatActivity.RESULT_OK) {
+//                bt.setupService();
+//                bt.startService(BluetoothState.DEVICE_OTHER);
+//                //setup();
+//            } else {
+//                Toast.makeText(MainActivity.this
+//                        , "Bluetooth was not enabled."
+//                        , Toast.LENGTH_SHORT).show();
+//                finish();
+//            }
+//        }
 
         if (requestCode == ADD_FRIEND) {
             if (resultCode == RESULT_OK) {
